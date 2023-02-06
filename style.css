@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300;400&family=Open+Sans:wght@300&family=Oswald:wght@300&family=PT+Sans&family=Poppins:wght@300;400&family=Raleway:wght@300;400&family=Roboto:wght@300;400&family=Slabo+13px&family=Slabo+27px&family=Source+Sans+Pro:wght@600;700&family=Ubuntu:ital,wght@1,300&family=Varela+Round&display=swap');/*########### CSS Resets ############*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+   
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 400px;
+    margin: auto;
+    margin-top: 80px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+.buttons{
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 40px;
+    
+    /* overflow: hidden; */
+}
+.form h1,h3{
+    /* border: 2px solid black; */
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form h1{
+    color: white;
+}
+.form h3{
+    color: rgb(248, 242, 242);
+}
+
+.labelName{
+    display: inline;
+    
+    /* border: 2px solid black; */
+}
+label[for=temp]{
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+
+}
+input[type=number]{
+    margin-left: 100px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    padding: 10px 5px;
+}
+input[type=number]:hover{
+    outline: none;
+}
+input[type=radio]{
+    margin-left: 15px;
+}
+#btn{
+    /* margin-left: 160px; */
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    /* display: inline-block; */
+}
+#btn:hover{
+    background-color: aliceblue;
+}
+#result{
+    margin-top: 8px;
+    margin-left: 45%;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(234, 15, 15);
+    background-color: black;
+    width: max-content;
+}

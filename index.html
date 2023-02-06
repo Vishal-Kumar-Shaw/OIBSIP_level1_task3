@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Handy Temperature Converter</title>
+</head>
+<body>
+    <div class="form">
+        <h1>Temperature Converter</h1>
+        <form>
+            <h3>Choose the type of conversion</h3>
+            <input type="radio" name="temp-type" id="type" value="CtoF" checked>
+            <label for="temp-type" class="labelName">Celcius to fahrenheit</label>
+            <input type="radio" name="temp-type" id="type" value="FtoC">
+            <label for="temp-type" class="labelName">fahrenheit to Celcius</label>
+            <br>
+            <label for="temp">Enter the Temperature</label>
+            <input type="number" id="temp" name="temp"/>
+            <br>
+            <div id="result"></div>
+            <div class="buttons">
+                <button type="button" id="btn" onclick="convert()">submit</button>
+                <button type="button" id="btn" onclick="clearinput()">Clear</button>
+            </div>
+            
+        </form>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
